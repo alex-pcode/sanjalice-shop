@@ -1,0 +1,269 @@
+<!doctype html><html lang="sr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow"><title>Fotografisanje – Sanjalice</title><meta name="description" content="Izaberite opcije i dodajte fotografisanje u korpu.">
+<link rel="icon" href="img/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbf6f1;--paper:#fffdfb;--ink:#4a2716;--muted:#7d6556;--brand:#99593e;--brand-d:#6e3c23;--soft:#dbbeac;--blush:#f1e1d5;--line:#e6d3c4;--ok:#4d7a52}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Nunito',system-ui,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}a{color:inherit}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;line-height:1.1;margin:0 0 .4em}
+h1{font-size:clamp(2.5rem,6vw,4.4rem)}h2{font-size:clamp(2rem,4.2vw,3rem)}h3{font-size:1.5rem}
+.script{font-family:'Caveat',cursive;color:var(--brand);font-size:1.6rem;line-height:1}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+section{padding:64px 0}
+.btn{display:inline-block;border:0;border-radius:999px;background:var(--brand);color:#fff;font:700 1rem 'Nunito',sans-serif;padding:14px 28px;cursor:pointer;text-decoration:none;transition:.2s;text-align:center}
+.btn:hover{background:var(--brand-d)}.btn.ghost{background:transparent;color:var(--brand-d);border:2px solid var(--brand)}.btn.ghost:hover{background:var(--blush)}
+.btn.sm{padding:10px 20px;font-size:.95rem}
+header.top{position:sticky;top:0;z-index:30;background:rgba(251,246,241,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:700}
+.brand img{width:40px;height:40px;border-radius:50%}
+nav.main{display:flex;gap:22px;font-weight:600;font-size:.98rem}nav.main a{text-decoration:none;color:var(--muted)}nav.main a:hover{color:var(--brand)}
+.cartbtn{position:relative;background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:9px 16px;font:700 .95rem 'Nunito';cursor:pointer;color:var(--ink)}
+.cartbtn b{display:inline-grid;place-items:center;min-width:22px;height:22px;border-radius:11px;background:var(--brand);color:#fff;font-size:.8rem;margin-left:6px;padding:0 5px}
+.hero{padding:40px 0 64px}.hero .grid{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center}
+.hero p.lead{font-size:1.15rem;color:var(--muted);max-width:34em}
+.hero .imgcol{position:relative}.hero .imgcol img{border-radius:220px 220px 24px 24px;aspect-ratio:4/5;object-fit:cover;width:100%;box-shadow:0 20px 50px -20px rgba(110,60,35,.45)}
+.hero .badge{position:absolute;left:-14px;bottom:28px;background:var(--paper);border-radius:16px;padding:12px 18px;box-shadow:0 10px 30px -12px rgba(0,0,0,.25);font-weight:700;font-size:.92rem}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.strip{background:var(--blush);padding:22px 0}.strip ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:18px;text-align:center;font-weight:600;font-size:.95rem}
+.strip small{display:block;font-weight:400;color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.card{background:var(--paper);border-radius:20px;overflow:hidden;border:1px solid var(--line);display:flex;flex-direction:column}
+.card .ph{aspect-ratio:4/5;overflow:hidden;background:var(--blush);display:block}.card .ph img{width:100%;height:100%;object-fit:cover;transition:.4s}.card:hover .ph img{transform:scale(1.04)}
+.card .body{padding:16px 18px 20px;display:flex;flex-direction:column;gap:6px;flex:1}.card h3{font-size:1.4rem;margin:0}
+.card p{margin:0;color:var(--muted);font-size:.93rem;flex:1}.card .price{font-weight:800;font-size:1.15rem;color:var(--brand-d)}
+.card .row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:8px}
+.sechead{text-align:center;max-width:640px;margin:0 auto 38px}.sechead p{color:var(--muted)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;counter-reset:s}.steps div{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:22px}
+.steps div:before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--brand);color:#fff;font-weight:800;margin-bottom:10px}
+.steps b{display:block;font-family:'Cormorant Garamond',serif;font-size:1.35rem}.steps span{color:var(--muted);font-size:.95rem}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.split img{border-radius:24px;width:100%;aspect-ratio:4/5;object-fit:cover}
+.split ul{padding-left:1.1em}.split li{margin:.3em 0}
+.alt{background:var(--blush)}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.gal img{border-radius:16px;aspect-ratio:3/4;object-fit:cover;width:100%}
+details{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin:10px 0}summary{cursor:pointer;font-weight:700}details p{margin:.6em 0 0;color:var(--muted)}
+footer{background:var(--brand-d);color:#f3e4d8;padding:44px 0 90px}footer a{color:#fff}footer .cols{display:grid;grid-template-columns:2fr 1fr 1fr;gap:30px}footer small{opacity:.75}
+.help{font-size:.9rem;color:var(--muted)}.help a{color:var(--brand-d);font-weight:700}
+.pp{padding:32px 0 56px}.pp .grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
+.pp .main img{border-radius:24px;width:100%;aspect-ratio:4/5;object-fit:cover}
+.thumbs{display:flex;gap:10px;margin-top:12px}.thumbs img{width:76px;height:96px;object-fit:cover;border-radius:12px;cursor:pointer;border:2px solid transparent;opacity:.75}.thumbs img.on{border-color:var(--brand);opacity:1}
+.crumb{font-size:.9rem;color:var(--muted);margin-bottom:12px}.crumb a{text-decoration:none}
+.pp .price{font-size:1.9rem;font-weight:800;color:var(--brand-d);margin:6px 0 14px}
+.opt{margin:16px 0}.opt .t{display:block;font-weight:700;margin-bottom:6px}
+.pills{display:flex;flex-wrap:wrap;gap:8px}.pills input{position:absolute;opacity:0}.pills label{border:1.5px solid var(--line);background:var(--paper);border-radius:999px;padding:8px 16px;cursor:pointer;font-weight:600;font-size:.95rem}
+.pills input:checked+label{border-color:var(--brand);background:var(--brand);color:#fff}.pills input:focus-visible+label{outline:2px solid var(--brand-d);outline-offset:2px}
+input[type=text],input[type=email],input[type=tel],textarea,select{width:100%;font:inherit;padding:12px 14px;border:1.5px solid var(--line);border-radius:12px;background:var(--paper);color:var(--ink)}
+input:focus,textarea:focus,select:focus{outline:2px solid var(--brand);border-color:var(--brand)}
+.qty{display:inline-flex;align-items:center;border:1.5px solid var(--line);border-radius:999px;background:var(--paper)}.qty button{width:36px;height:36px;border:0;background:none;font-size:1.2rem;cursor:pointer;color:var(--brand-d)}.qty span{min-width:26px;text-align:center;font-weight:700}
+.buy{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:22px}
+.facts{background:var(--blush);border-radius:18px;padding:16px 20px;margin:20px 0;font-size:.95rem}.facts ul{margin:0;padding-left:1.1em}
+.more{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.more a{text-decoration:none}.more img{border-radius:14px;aspect-ratio:4/5;object-fit:cover;width:100%}.more b{display:block;margin-top:6px;font-family:'Cormorant Garamond',serif;font-size:1.2rem}
+.ov{position:fixed;inset:0;background:rgba(40,20,10,.45);opacity:0;pointer-events:none;transition:.25s;z-index:50}.ov.on{opacity:1;pointer-events:auto}
+.drawer{position:fixed;top:0;right:0;height:100%;width:min(440px,100%);background:var(--bg);z-index:60;transform:translateX(105%);transition:.3s;display:flex;flex-direction:column;box-shadow:-12px 0 40px rgba(0,0,0,.2);visibility:hidden}.drawer.on{transform:none;visibility:visible}
+.drawer>header{display:flex;justify-content:space-between;align-items:center;padding:18px 20px;border-bottom:1px solid var(--line)}.drawer>header h3{margin:0}
+.x{background:none;border:0;font-size:1.8rem;cursor:pointer;color:var(--ink);line-height:1}
+.dbody{flex:1;overflow:auto;padding:16px 20px}.dfoot{padding:16px 20px;border-top:1px solid var(--line);background:var(--paper)}
+.line{display:grid;grid-template-columns:64px 1fr auto;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}.line img{width:64px;height:80px;object-fit:cover;border-radius:10px}
+.line b{display:block;line-height:1.2}.line small{display:block;color:var(--muted);line-height:1.35}.line .rm{background:none;border:0;color:var(--brand);cursor:pointer;font:600 .85rem 'Nunito';padding:0;margin-left:10px}
+.tot{display:flex;justify-content:space-between;font-weight:800;font-size:1.2rem;margin-bottom:12px}
+.empty{text-align:center;color:var(--muted);padding:40px 0}
+.form label{display:block;font-weight:700;font-size:.9rem;margin:10px 0 4px}.form .two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.form textarea{min-height:80px}.pay{background:var(--blush);border-radius:12px;padding:10px 14px;font-size:.92rem;margin:12px 0}
+.thanks{text-align:center;padding:30px 4px}.thanks .no{display:inline-block;background:var(--blush);border-radius:12px;padding:8px 18px;font-weight:800;font-size:1.25rem;margin:10px 0}
+.back{background:none;border:0;color:var(--brand-d);font:700 .95rem 'Nunito';cursor:pointer;padding:0 0 8px}
+.err{color:#a3322a;font-size:.85rem;display:none}.bad+.err{display:block}.bad{border-color:#a3322a!important}
+.toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,120px);background:var(--ink);color:#fff;padding:12px 22px;border-radius:999px;z-index:70;transition:.3s;font-weight:600}.toast.on{transform:translate(-50%,0)}
+@media(max-width:900px){
+ nav.main{display:none}section{padding:44px 0}
+ .hero .grid,.split,.pp .grid{grid-template-columns:1fr;gap:26px}
+ .hero .imgcol{order:-1}.hero .imgcol img{aspect-ratio:1/1;border-radius:160px 160px 24px 24px}.hero .badge{left:8px}
+ .cards,.steps,.gal,.more{grid-template-columns:1fr 1fr}.strip ul{grid-template-columns:1fr 1fr}footer .cols{grid-template-columns:1fr}
+}
+@media(max-width:520px){.cards{gap:12px}.card .body{padding:12px}.card h3{font-size:1.2rem}.card .row .btn{width:100%}.form .two{grid-template-columns:1fr}}
+</style></head><body><header class="top"><div class="wrap"><a class="brand" href="index.html"><img src="img/logo.jpg" alt=""><span>Sanjalice</span></a>
+<nav class="main"><a href="index.html#sesije">Fotografisanja</a><a href="index.html#kako">Kako ide</a><a href="index.html#newborn">Newborn</a><a href="index.html#pitanja">Pitanja</a></nav>
+<button class="cartbtn" aria-label="Otvori korpu">Korpa <b class="cnt">0</b></button></div></header>
+<main class="pp"><div class="wrap">
+ <div class="crumb"><a href="index.html">Početna</a> / <a href="index.html#sesije">Fotografisanja</a> / <span id="crumb"></span></div>
+ <div class="grid">
+  <div><div class="main"><img id="mainimg" src="" alt=""></div><div class="thumbs" id="thumbs"></div></div>
+  <div>
+   <h1 id="pname" style="font-size:clamp(2.2rem,4.5vw,3.2rem)"></h1>
+   <div class="price" id="pprice"></div>
+   <p id="pdesc"></p>
+   <div class="facts"><ul id="pfacts"></ul></div>
+   <div id="popts"></div>
+   <div class="opt"><label class="t" for="ptext" id="ptextl"></label><input type="text" id="ptext" maxlength="160"></div>
+   <div class="buy"><div class="qty"><button type="button" id="qm" aria-label="Manje">−</button><span id="qv">1</span><button type="button" id="qp" aria-label="Više">+</button></div>
+    <button class="btn" id="addbtn">Dodaj u korpu</button></div>
+   <p class="help" style="margin-top:14px">Plaćanje pouzećem. Pitanja? Pišite nam na Instagramu <a href="https://www.instagram.com/sanjalice__/" target="_blank" rel="noopener">@sanjalice__</a></p>
+  </div>
+ </div>
+ <div style="margin-top:56px"><h2>Pogledajte i ostalo</h2><div class="more" id="more"></div></div>
+</div></main>
+<footer><div class="wrap cols"><div><div class="brand" style="color:#fff"><img src="img/logo.jpg" alt=""><span>Sanjalice</span></div>
+<p>Studio za fotografisanje, Obrenovac.<br>Fotograf: Zona Simić.</p><small>Ovo je mockup web-prodavnice; cene i uslovi su okvirni do potvrde vlasnika studija.</small></div>
+<div><b>Kontakt</b><p>Zakazivanje termina:<br><a href="tel:+381644843566">064 484 3566</a></p></div>
+<div><b>Pratite nas</b><p><a href="https://www.instagram.com/sanjalice__/" target="_blank" rel="noopener">Instagram @sanjalice__</a></p></div></div></footer>
+<div class="ov" id="ov"></div>
+<aside class="drawer" id="drawer" aria-label="Korpa">
+ <header><h3>Vaša korpa</h3><button class="x" id="xcart" aria-label="Zatvori">&times;</button></header>
+ <div id="v-cart" style="display:flex;flex-direction:column;flex:1;min-height:0">
+  <div class="dbody"><div id="lines"></div></div>
+  <div class="dfoot" id="cartfoot"><div class="tot"><span>Ukupno</span><span id="total">0 RSD</span></div>
+   <button class="btn" style="width:100%" id="tocheckout">Nastavi na porudžbinu</button>
+   <p class="help" style="margin:10px 0 0">Plaćanje pouzećem. Pitanja? Pišite nam na Instagramu <a href="https://www.instagram.com/sanjalice__/" target="_blank" rel="noopener">@sanjalice__</a></p></div>
+ </div>
+ <div id="v-checkout" hidden style="flex:1;overflow:auto;padding:16px 20px">
+  <button class="back" id="backcart">&larr; Nazad u korpu</button>
+  <h3>Podaci za porudžbinu</h3>
+  <form class="form" id="form" novalidate>
+   <label for="f-name">Ime i prezime</label><input id="f-name" name="ime" type="text" autocomplete="name" required><div class="err">Upišite ime i prezime.</div>
+   <label for="f-addr">Adresa</label><input id="f-addr" name="adresa" type="text" autocomplete="street-address" required><div class="err">Upišite adresu.</div>
+   <div class="two"><div><label for="f-city">Grad</label><input id="f-city" name="grad" type="text" autocomplete="address-level2" required><div class="err">Upišite grad.</div></div>
+   <div><label for="f-zip">Poštanski broj</label><input id="f-zip" name="posta" type="text" inputmode="numeric" autocomplete="postal-code" required><div class="err">Upišite poštanski broj.</div></div></div>
+   <label for="f-phone">Telefon</label><input id="f-phone" name="telefon" type="tel" autocomplete="tel" required><div class="err">Upišite telefon.</div>
+   <label for="f-mail">E-mail</label><input id="f-mail" name="email" type="email" autocomplete="email" required><div class="err">Upišite ispravan e-mail.</div>
+   <label for="f-date">Željeni datum ili nedelja termina (nije obavezno)</label><input id="f-date" name="termin" type="text" placeholder="npr. druga polovina oktobra, vikend">
+   <label for="f-note">Napomena / personalizacija (nije obavezno)</label><textarea id="f-note" name="napomena" placeholder="Želje za scenografiju, imena, poruka za vaučer…"></textarea>
+   <div class="pay"><b>Plaćanje pouzećem</b> – gotovinom pri preuzimanju vaučera ili na dan termina u studiju. Ništa se ne plaća unapred. Javićemo vam se radi potvrde termina.</div>
+   <div class="tot"><span>Ukupno</span><span id="sum"></span></div>
+   <button class="btn" style="width:100%" type="submit">Pošalji porudžbinu</button>
+   <p class="help">Pitanja? Pišite nam na Instagramu <a href="https://www.instagram.com/sanjalice__/" target="_blank" rel="noopener">@sanjalice__</a></p>
+  </form>
+ </div>
+ <div id="v-done" hidden style="flex:1;overflow:auto;padding:16px 20px">
+  <div class="thanks"><div class="script" style="font-size:2.4rem">Hvala!</div><h3>Hvala, porudžbina je primljena</h3>
+   <div class="no" id="orderno"></div>
+   <p>Potvrdu šaljemo na <b id="donemail"></b>, a javićemo vam se i radi dogovora termina. Plaćanje je pouzećem.</p>
+   <button class="btn" id="closedone">Nastavi razgledanje</button>
+   <p class="help" style="margin-top:16px">Pitanja? Pišite nam na Instagramu <a href="https://www.instagram.com/sanjalice__/" target="_blank" rel="noopener">@sanjalice__</a></p></div>
+ </div>
+</aside>
+<div class="toast" id="toast" role="status"></div>
+<script>
+const PRODUCTS=[
+{id:'newborn',name:'Newborn fotografisanje',short:'Prve nedelje života, nežno uvijene u tkanine koje biramo zajedno.',price:12900,img:'img/newborn.jpg',imgs:['img/newborn.jpg','img/newborn3.jpg','img/newborn2.jpg'],
+ desc:'Fotografisanje beba starosti do tri nedelje, dok najviše spavaju i lako se uvijaju u tkanine i rekvizite. Jedan termin traje 2,5–3 sata, a tata slobodno može da uskoči u kafu ili da završi neki posao.',
+ facts:['Beba do 3 nedelje starosti – tada je san najčvršći','Termin traje 2,5–3 sata','Uvijanje u tkanine i dezene koje biramo zajedno, portreti roditelja i braće/sestara, beba na krevetiću ili u garderobici, kadrovi detalja','Javite se još dok ste trudni: dogovorimo okvirnu nedelju, a tačan dan nakon porođaja'],
+ options:[{k:'Tonovi i podloga',v:['Nežno roze','Zeleno','Sivo-plavo','Bež i krem','Prepuštam vama']}],
+ text:'Očekivani datum porođaja / ime bebe',ph:'npr. porođaj krajem novembra, beba Luka'},
+{id:'lifestyle',name:'Lifestyle fotografisanje bebe',short:'Kraći termin za bebe koje su prerasle newborn – prirodno i toplo.',price:7900,img:'img/lifestyle.jpg',imgs:['img/lifestyle.jpg','img/lifestyle2.jpg','img/lifestyle3.jpg'],
+ desc:'Ako ste zakasnili za newborn, uvek možete doći na lifestyle fotografisanje sa bebom. Termin je kraći, a ako beba zaspi u miru i tišini studija, dobijete i one nežne kadrove.',
+ facts:['Za bebe koje su starije od newborn uzrasta','Kraći termin od newborn fotografisanja','Opciono: mlaka kupka na kraju termina','Sve crno-bele fotografije dobijate i u boji'],
+ options:[{k:'Dodatak',v:['Bez kupke','Sa mlakom kupkom']}],
+ text:'Ime i uzrast bebe',ph:'npr. Vasilije, 30 dana'},
+{id:'smash',name:'Cake smash & splash',short:'Prvi rođendan, torta i kupanje u studiju – najzabavnije fotografisanje.',price:9900,img:'img/smash.jpg',imgs:['img/smash.jpg'],
+ desc:'Rođendanska scenografija u studiju, torta koju je dozvoljeno da se razmaže i kupka sa mehurićima za kraj. Sreća, najveća.',
+ facts:['Rođendanska scenografija u studiju','Slavimo rođendane – i prvi i sve kasnije','Cake smash & splash sa kupkom'],
+ options:[{k:'Boje scenografije',v:['Roze i pastelno','Bež i braon','Bela i nežna','Prepuštam vama']}],
+ text:'Ime i koji rođendan slavi',ph:'npr. Nadja, 1. rođendan'},
+{id:'trudnice',name:'Fotografisanje trudnica',short:'Mekana svetla, tkanine i nežnost – za vas i onog koga volite.',price:8900,img:'img/trudnice.jpg',imgs:['img/trudnice.jpg','img/trudnice3.jpg','img/trudnice2.jpg'],
+ desc:'Fotografisanje u studiju sa scenografijom koja je uvek dostupna – bela postavka sa tkaninama, cvećem ili limunovima. Samo za vas ili sa partnerom.',
+ facts:['Studio sa scenografijom za trudnice','Samo trudnica, sa partnerom ili sa porodicom','Crno-bele fotografije stižu i u boji'],
+ options:[{k:'Ko dolazi na fotografisanje',v:['Samo trudnica','Sa partnerom','Sa porodicom']}],
+ text:'Nedelja trudnoće i želje',ph:'npr. 34. nedelja, volim svetle tonove'},
+{id:'porodicno',name:'Porodično fotografisanje u studiju',short:'Zagrljaji, igra, ples i zajednički momenti – jer je porodica SVE.',price:8500,img:'img/family.jpg',imgs:['img/family.jpg','img/hero.jpg','img/family2.jpg'],
+ desc:'Nova scenografija u studiju osmišljena je za vaše zagrljaje, igru, ples i zajedničke momente. Ljubav, dodir, pogled, poljubac, nežnost – ostalo prepustite nama.',
+ facts:['Nova scenografija u studiju','Za cele porodice, sa decom bilo kog uzrasta','Sve crno-bele fotografije dobijate i u boji'],
+ options:[{k:'Broj članova',v:['2–3 osobe','4–5 osoba','6 i više']}],
+ text:'Imena i uzrast dece / želje',ph:'npr. mama, tata, Mila (8), Petar (3)'},
+{id:'skolarci',name:'Školarci i prvaci',short:'Prvi dan škole u studiju sa školskom scenografijom.',price:5900,img:'img/skola.jpg',imgs:['img/skola.jpg','img/skola2.jpg','img/maturant.jpg'],
+ desc:'Školska scenografija u studiju – tabla, sveske, računaljka i osmeh. Za buduće đake prvake, ali i za male maturante i portrete.',
+ facts:['Školska scenografija u studiju','Za prvake i veće đake','Portreti za male maturante'],
+ options:[{k:'Vrsta',v:['Đak prvak','Školarac','Mali maturant']}],
+ text:'Ime i razred',ph:'npr. Nina, osmi razred'},
+{id:'krstenje',name:'Fotografisanje krštenja',short:'Mir, svetlo i emocije obreda – sačuvani u pravim trenucima.',price:15900,img:'img/krstenje.jpg',imgs:['img/krstenje.jpg','img/krstenje2.jpg'],
+ desc:'Fotografišem obred od prvog do poslednjeg trenutka – u manastirima i crkvama oko Obrenovca i šire. Svetlo koje prodire kroz crkvu, tišina, ljubav porodice.',
+ facts:['Reportaža obreda krštenja','Manastiri i crkve (npr. Kaona, Grabovac, Belo Polje)','Crno-bele fotografije stižu i u boji'],
+ options:[{k:'Obuhvat',v:['Samo obred','Obred i porodični portreti']}],
+ text:'Hram, datum i vreme krštenja',ph:'npr. Manastir Kaona, 12. oktobar u 11h'},
+{id:'voucer',name:'Poklon vaučer',short:'Jedan od najlepših poklona koje možete pokloniti porodici.',price:5000,img:'img/voucer.jpg',imgs:['img/voucer.jpg'],
+ desc:'Vaučer za fotografisanje u studiju – lepo upakovan, spreman za poklon. Mnogi su pitali za newborn vaučer, i zaista je to jedan od najlepših poklona koje možete darivati porodici.',
+ facts:['Vaučer u lepom pakovanju','Važi za newborn ili bilo koje fotografisanje u studiju'],
+ options:[{k:'Iznos vaučera',v:['5.000 RSD','10.000 RSD','15.000 RSD'],prices:[5000,10000,15000]}],
+ text:'Za koga je vaučer / poruka',ph:'npr. Za Anu i Marka, srećno roditeljstvo!'}
+];
+
+const fmt=n=>n.toLocaleString('de-DE')+' RSD';
+const $=s=>document.querySelector(s);
+const KEY='sanjalice_cart_v1';
+let cart=[];
+try{cart=JSON.parse(localStorage.getItem(KEY)||'[]')||[]}catch(e){cart=[]}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(cart))}catch(e){}}
+const byId=id=>PRODUCTS.find(p=>p.id===id);
+function unit(p,sel){let pr=p.price;(p.options||[]).forEach(o=>{if(o.prices){const i=o.v.indexOf(sel[o.k]);if(i>=0)pr=o.prices[i]}});return pr}
+function defaults(p){const s={};(p.options||[]).forEach(o=>s[o.k]=o.v[0]);return s}
+cart=cart.filter(l=>byId(l.id));
+function addToCart(id,sel,text,qty){
+ const p=byId(id);sel=sel||defaults(p);text=(text||'').trim();qty=qty||1;
+ const key=id+'|'+JSON.stringify(sel)+'|'+text;
+ const ex=cart.find(l=>l.key===key);
+ if(ex)ex.qty+=qty;else cart.push({key,id,sel,text,qty});
+ save();render();openCart();toast(p.name+' je u korpi');
+}
+function total(){return cart.reduce((s,l)=>s+unit(byId(l.id),l.sel)*l.qty,0)}
+function toast(m){const t=$('#toast');t.textContent=m;t.classList.add('on');setTimeout(()=>t.classList.remove('on'),1800)}
+function openCart(){$('#ov').classList.add('on');$('#drawer').classList.add('on');showView('cart')}
+function closeCart(){$('#ov').classList.remove('on');$('#drawer').classList.remove('on')}
+function showView(v){['cart','checkout','done'].forEach(x=>{$('#v-'+x).hidden=x!==v})}
+function esc(s){return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
+function render(){
+ const n=cart.reduce((s,l)=>s+l.qty,0);
+ document.querySelectorAll('.cnt').forEach(e=>e.textContent=n);
+ const box=$('#lines');
+ if(!cart.length){box.innerHTML='<div class="empty">Korpa je prazna.<br>Izaberite fotografisanje koje vam se sviđa.</div>';$('#cartfoot').hidden=true;return}
+ $('#cartfoot').hidden=false;
+ box.innerHTML=cart.map((l,i)=>{const p=byId(l.id);const det=Object.entries(l.sel).map(([k,v])=>k+': '+v).join(' · ');
+  return '<div class="line"><img src="'+p.img+'" alt=""><div><b>'+esc(p.name)+'</b><small>'+esc(det)+'</small>'+(l.text?'<small>'+esc(p.text)+': '+esc(l.text)+'</small>':'')+
+  '<div style="margin-top:6px;display:flex;align-items:center;gap:6px"><div class="qty"><button aria-label="Manje" data-q="-1" data-i="'+i+'">−</button><span>'+l.qty+'</span><button aria-label="Više" data-q="1" data-i="'+i+'">+</button></div><button class="rm" data-rm="'+i+'">Ukloni</button></div></div>'+
+  '<div style="font-weight:800;white-space:nowrap">'+fmt(unit(p,l.sel)*l.qty)+'</div></div>'}).join('');
+ $('#total').textContent=fmt(total());
+}
+document.addEventListener('click',e=>{
+ const t=e.target.closest('button');if(!t)return;
+ if(t.dataset.q){const l=cart[+t.dataset.i];l.qty+=+t.dataset.q;if(l.qty<1)cart.splice(+t.dataset.i,1);save();render()}
+ else if(t.dataset.rm){cart.splice(+t.dataset.rm,1);save();render()}
+ else if(t.dataset.add){addToCart(t.dataset.add)}
+});
+$('#ov').onclick=closeCart;$('#xcart').onclick=closeCart;
+document.querySelectorAll('.cartbtn').forEach(b=>b.onclick=openCart);
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeCart()});
+$('#tocheckout').onclick=()=>{showView('checkout');$('#sum').textContent=fmt(total())};
+$('#backcart').onclick=()=>showView('cart');
+$('#form').addEventListener('submit',e=>{
+ e.preventDefault();const f=e.target;let ok=true;
+ f.querySelectorAll('[required]').forEach(i=>{const bad=!i.value.trim()||(i.type==='email'&&!/^\S+@\S+\.\S+$/.test(i.value));i.classList.toggle('bad',bad);if(bad)ok=false});
+ if(!ok||!cart.length){const b=f.querySelector('.bad');if(b)b.focus();return}
+ const no='SNJ-'+new Date().toISOString().slice(2,10).replace(/-/g,'')+'-'+Math.floor(1000+Math.random()*9000);
+ const order={no,at:new Date().toISOString(),total:total(),lines:cart,customer:Object.fromEntries(new FormData(f))};
+ try{const all=JSON.parse(localStorage.getItem('sanjalice_orders')||'[]');all.push(order);localStorage.setItem('sanjalice_orders',JSON.stringify(all))}catch(x){}
+ $('#orderno').textContent=no;$('#donemail').textContent=f.email.value;
+ cart=[];save();render();f.reset();showView('done');
+});
+$('#closedone').onclick=closeCart;
+window.addEventListener('storage',e=>{if(e.key===KEY){try{cart=JSON.parse(e.newValue||'[]')||[]}catch(x){cart=[]}render()}});
+render();
+
+const pid=new URLSearchParams(location.search).get('p');
+const P=byId(pid)||PRODUCTS[0];
+document.title=P.name+' – Sanjalice';
+$('#crumb').textContent=P.name;$('#pname').textContent=P.name;$('#pdesc').textContent=P.desc;
+$('#pfacts').innerHTML=P.facts.map(f=>'<li>'+f+'</li>').join('');
+$('#ptextl').textContent=P.text+' (nije obavezno)';$('#ptext').placeholder=P.ph;
+const hasVar=P.options.some(o=>o.prices);
+function sel(){const s={};P.options.forEach(o=>{const c=document.querySelector('input[name="o_'+o.k+'"]:checked');s[o.k]=c?c.value:o.v[0]});return s}
+function upd(){$('#pprice').textContent=fmt(unit(P,sel()))}
+$('#popts').innerHTML=P.options.map((o,oi)=>'<div class="opt"><span class="t">'+o.k+'</span><div class="pills" role="radiogroup">'+o.v.map((v,i)=>'<input type="radio" name="o_'+o.k+'" id="o'+oi+'_'+i+'" value="'+v+'"'+(i===0?' checked':'')+'><label for="o'+oi+'_'+i+'">'+v+'</label>').join('')+'</div></div>').join('');
+document.querySelectorAll('#popts input').forEach(i=>i.onchange=upd);upd();
+function show(src){$('#mainimg').src=src;$('#mainimg').alt=P.name;document.querySelectorAll('#thumbs img').forEach(t=>t.classList.toggle('on',t.dataset.s===src))}
+$('#thumbs').innerHTML=P.imgs.length>1?P.imgs.map(s=>'<img src="'+s+'" data-s="'+s+'" alt="">').join(''):'';
+$('#thumbs').onclick=e=>{if(e.target.dataset.s)show(e.target.dataset.s)};show(P.imgs[0]);
+let q=1;$('#qm').onclick=()=>{q=Math.max(1,q-1);$('#qv').textContent=q};$('#qp').onclick=()=>{q=Math.min(9,q+1);$('#qv').textContent=q};
+$('#addbtn').onclick=()=>{addToCart(P.id,sel(),$('#ptext').value,q)};
+$('#more').innerHTML=PRODUCTS.filter(p=>p.id!==P.id).slice(0,4).map(p=>'<a href="fotografisanje.html?p='+p.id+'"><img src="'+p.img+'" alt="" loading="lazy"><b>'+p.name+'</b><span class="help">'+fmt(p.price)+'</span></a>').join('');
+</script></body></html>
