@@ -1,5 +1,5 @@
 <!doctype html><html lang="sr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="robots" content="noindex, nofollow"><title>Sanjalice – studio za fotografisanje, Obrenovac</title><meta name="description" content="Newborn, trudnice, porodice, cake smash, krštenja – izaberite fotografisanje i poručite online.">
+<meta name="robots" content="noindex, nofollow"><title>Sanjalice – studio za fotografisanje, Obrenovac</title><meta name="description" content="Newborn, trudnice, porodice, cake smash, krštenja – izaberite fotografisanje i zakažite termin online.">
 <link rel="icon" href="img/logo.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -21,8 +21,7 @@ header.top{position:sticky;top:0;z-index:30;background:rgba(251,246,241,.94);bac
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:700}
 .brand img{width:40px;height:40px;border-radius:50%}
 nav.main{display:flex;gap:22px;font-weight:600;font-size:.98rem}nav.main a{text-decoration:none;color:var(--muted)}nav.main a:hover{color:var(--brand)}
-.cartbtn{position:relative;background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:9px 16px;font:700 .95rem 'Nunito';cursor:pointer;color:var(--ink)}
-.cartbtn b{display:inline-grid;place-items:center;min-width:22px;height:22px;border-radius:11px;background:var(--brand);color:#fff;font-size:.8rem;margin-left:6px;padding:0 5px}
+.bookbtn{background:var(--brand);border:0;border-radius:999px;padding:10px 18px;font:700 .95rem 'Nunito';cursor:pointer;color:#fff}.bookbtn:hover{background:var(--brand-d)}
 .hero{padding:40px 0 64px}.hero .grid{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center}
 .hero p.lead{font-size:1.15rem;color:var(--muted);max-width:34em}
 .hero .imgcol{position:relative}.hero .imgcol img{border-radius:220px 220px 24px 24px;aspect-ratio:4/5;object-fit:cover;width:100%;box-shadow:0 20px 50px -20px rgba(110,60,35,.45)}
@@ -76,7 +75,6 @@ input:focus,textarea:focus,select:focus{outline:2px solid var(--brand);border-co
 .thanks{text-align:center;padding:30px 4px}.thanks .no{display:inline-block;background:var(--blush);border-radius:12px;padding:8px 18px;font-weight:800;font-size:1.25rem;margin:10px 0}
 .back{background:none;border:0;color:var(--brand-d);font:700 .95rem 'Nunito';cursor:pointer;padding:0 0 8px}
 .err{color:#a3322a;font-size:.85rem;display:none}.bad+.err{display:block}.bad{border-color:#a3322a!important}
-.toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,120px);background:var(--ink);color:#fff;padding:12px 22px;border-radius:999px;z-index:70;transition:.3s;font-weight:600}.toast.on{transform:translate(-50%,0)}
 @media(max-width:900px){
  nav.main{display:none}section{padding:44px 0}
  .hero .grid,.split,.pp .grid{grid-template-columns:1fr;gap:26px}
@@ -86,13 +84,13 @@ input:focus,textarea:focus,select:focus{outline:2px solid var(--brand);border-co
 @media(max-width:520px){.cards{gap:12px}.card .body{padding:12px}.card h3{font-size:1.2rem}.card .row .btn{width:100%}.form .two{grid-template-columns:1fr}}
 </style></head><body><header class="top"><div class="wrap"><a class="brand" href="index.html"><img src="img/logo.jpg" alt=""><span>Sanjalice</span></a>
 <nav class="main"><a href="#sesije">Fotografisanja</a><a href="#kako">Kako ide</a><a href="#newborn">Newborn</a><a href="#pitanja">Pitanja</a></nav>
-<button class="cartbtn" aria-label="Otvori korpu">Korpa <b class="cnt">0</b></button></div></header>
+<button class="bookbtn">Zakaži termin</button></div></header>
 <main>
 <section class="hero"><div class="wrap grid">
  <div><div class="script">Za nove slatke snove</div>
   <h1>Fotografije koje čuvaju ono što je najvažnije</h1>
-  <p class="lead">Studio Sanjalice u Obrenovcu. Newborn, trudnice, porodice, rođendani i krštenja – u prirodnom svetlu, bez žurbe, sa puno nežnosti. Izaberite fotografisanje, dodajte ga u korpu i pošaljite porudžbinu. Plaćate pouzećem.</p>
-  <div class="cta"><a class="btn" href="#sesije">Izaberi fotografisanje</a><a class="btn ghost" href="fotografisanje.html?p=newborn">Newborn fotografisanje</a></div>
+  <p class="lead">Studio Sanjalice u Obrenovcu. Newborn, trudnice, porodice, rođendani i krštenja – u prirodnom svetlu, bez žurbe, sa puno nežnosti.</p>
+  <div class="cta"><a class="btn" href="#sesije">Izaberi fotografisanje</a><button class="btn ghost" data-book="newborn">Zakaži termin</button></div>
   <p class="help" style="margin-top:14px">Pitanja? Pišite nam na Instagramu <a href="https://www.instagram.com/sanjalice__/" target="_blank" rel="noopener">@sanjalice__</a></p></div>
  <div class="imgcol"><img src="img/hero.jpg" alt="Porodica u studiju Sanjalice"><div class="badge">Porodica je SVE</div></div>
 </div></section>
@@ -101,20 +99,20 @@ input:focus,textarea:focus,select:focus{outline:2px solid var(--brand);border-co
  <li>Studio u Obrenovcu<small>prirodno svetlo i nove scenografije</small></li>
  <li>Crno-bele u boji<small>sve crno-bele fotografije dobijate i u boji</small></li>
  <li>Newborn 2,5–3 sata<small>bez žurbe, uz pauze za bebu</small></li>
- <li>Plaćanje pouzećem<small>ništa unapred</small></li></ul></div></div>
+ <li>Ništa unapred<small>plaćanje u studiju, na dan fotografisanja</small></li></ul></div></div>
 
 <section id="sesije"><div class="wrap">
- <div class="sechead"><div class="script">Izaberite svoje</div><h2>Fotografisanja</h2><p>Svaka sesija ima svoje opcije – tonove, dodatke i mesto za vaše želje. Sve što izaberete ide u korpu.</p></div>
+ <div class="sechead"><div class="script">Izaberite svoje</div><h2>Fotografisanja</h2><p>Svaka sesija ima svoje opcije – tonove, dodatke i mesto za vaše želje. Izaberite šta vam se sviđa i predložite termin.</p></div>
  <div class="cards" id="cards"></div>
 </div></section>
 
 <section id="kako" class="alt"><div class="wrap">
- <div class="sechead"><h2>Kako ide poručivanje</h2></div>
+ <div class="sechead"><h2>Kako ide zakazivanje</h2></div>
  <div class="steps">
-  <div><b>Izaberite</b><span>Fotografisanje, opcije i vaše želje dodajte u korpu.</span></div>
-  <div><b>Pošaljite porudžbinu</b><span>Ime, adresa, telefon i e-mail. Plaćanje pouzećem.</span></div>
-  <div><b>Potvrdimo termin</b><span>Javljamo se da dogovorimo tačan dan i sat.</span></div>
-  <div><b>Dođite u studio</b><span>Mi pripremimo scenografiju, vi uživate.</span></div>
+  <div><b>Izaberite</b><span>Fotografisanje, tonove i dodatke koji vam se sviđaju.</span></div>
+  <div><b>Predložite termin</b><span>Ime, telefon i okvirni datum. Ništa se ne plaća unapred.</span></div>
+  <div><b>Potvrdimo termin</b><span>Javljamo se telefonom da dogovorimo tačan dan i sat.</span></div>
+  <div><b>Dođite u studio</b><span>Mi pripremimo scenografiju, vi uživate. Plaćate tek tada.</span></div>
  </div>
 </div></section>
 
@@ -123,13 +121,13 @@ input:focus,textarea:focus,select:focus{outline:2px solid var(--brand);border-co
  <div><div class="script">Newborn</div><h2>Zašto je važno da termin planirate u trudnoći</h2>
   <p>Newborn fotografija podrazumeva bebe starosti do tri nedelje. U prvim nedeljama beba samo jede i spava, ne muče je grčevi i koža joj je čista. San je tada dosta čvrst, pa je lako uviti je i smestiti u sve one sanjive poze.</p>
   <ul><li>Jedan termin traje 2,5–3 sata</li><li>Uvijanje u tkanine, portreti roditelja i braće/sestara, beba na krevetiću ili u garderobici, kadrovi detalja</li><li>Datum porođaja se ne zna unapred – zato se javite još dok ste trudni</li></ul>
-  <a class="btn" href="fotografisanje.html?p=newborn">Newborn fotografisanje</a></div>
+  <div class="cta" style="display:flex;gap:12px;flex-wrap:wrap"><button class="btn" data-book="newborn">Zakaži newborn termin</button><a class="btn ghost" href="fotografisanje.html?p=newborn">Više o newborn</a></div></div>
 </div></section>
 
 <section class="alt"><div class="wrap split">
  <div><div class="script">Poklon</div><h2>Vaučer za fotografisanje</h2>
-  <p>Pitali ste za vaučer za newborn – može se poručiti odavde, a mislimo da je to jedan od najlepših poklona koje možete pokloniti porodici.</p>
-  <a class="btn" href="fotografisanje.html?p=voucer">Poručite vaučer</a></div>
+  <p>Pitali ste za vaučer za newborn – sada ga možete poručiti ovde, a mislimo da je to jedan od najlepših poklona koje možete pokloniti porodici.</p>
+  <button class="btn" data-book="voucer">Poručite vaučer</button></div>
  <img src="img/voucer.jpg" alt="Poklon vaučer" loading="lazy">
 </div></section>
 
@@ -143,51 +141,45 @@ input:focus,textarea:focus,select:focus{outline:2px solid var(--brand);border-co
  <details><summary>Kada da zakažem newborn fotografisanje?</summary><p>Još dok ste trudni. Kažite dan termina i orijentacionu nedelju kada možete doći u studio, pa nakon porođaja dogovaramo konačan dan.</p></details>
  <details><summary>Koliko traje termin?</summary><p>Newborn termin traje 2,5–3 sata. Lifestyle termin sa bebom je kraći.</p></details>
  <details><summary>Da li dobijam crno-bele fotografije i u boji?</summary><p>Da. Sve crno-bele fotografije koje izaberem dobijate i u boji, isto važi i za fotografisanje u studiju.</p></details>
- <details><summary>Kako se plaća?</summary><p>Pouzećem – gotovinom pri preuzimanju vaučera ili na dan termina u studiju. Ništa se ne plaća unapred.</p></details>
+ <details><summary>Kako se plaća?</summary><p>Ništa se ne plaća unapred. Fotografisanje plaćate u studiju, na dan termina, a vaučer pri preuzimanju.</p></details>
  <details><summary>Gde se nalazi studio?</summary><p>U Obrenovcu. Tačnu adresu šaljemo uz potvrdu termina.</p></details>
  <p class="help" style="text-align:center;margin-top:22px">Nešto drugo vas zanima? Pišite nam na Instagramu <a href="https://www.instagram.com/sanjalice__/" target="_blank" rel="noopener">@sanjalice__</a></p>
 </div></section>
 </main>
 <footer><div class="wrap cols"><div><div class="brand" style="color:#fff"><img src="img/logo.jpg" alt=""><span>Sanjalice</span></div>
-<p>Studio za fotografisanje, Obrenovac.<br>Fotograf: Zona Simić.</p><small>Ovo je mockup web-prodavnice; cene i uslovi su okvirni do potvrde vlasnika studija.</small></div>
+<p>Studio za fotografisanje, Obrenovac.<br>Fotograf: Zona Simić.</p><small>Ovo je predlog sajta; cene i uslovi su okvirni do potvrde studija.</small></div>
 <div><b>Kontakt</b><p>Zakazivanje termina:<br><a href="tel:+381644843566">064 484 3566</a></p></div>
 <div><b>Pratite nas</b><p><a href="https://www.instagram.com/sanjalice__/" target="_blank" rel="noopener">Instagram @sanjalice__</a></p></div></div></footer>
 <div class="ov" id="ov"></div>
-<aside class="drawer" id="drawer" aria-label="Korpa">
- <header><h3>Vaša korpa</h3><button class="x" id="xcart" aria-label="Zatvori">&times;</button></header>
- <div id="v-cart" style="display:flex;flex-direction:column;flex:1;min-height:0">
-  <div class="dbody"><div id="lines"></div></div>
-  <div class="dfoot" id="cartfoot"><div class="tot"><span>Ukupno</span><span id="total">0 RSD</span></div>
-   <button class="btn" style="width:100%" id="tocheckout">Nastavi na porudžbinu</button>
-   <p class="help" style="margin:10px 0 0">Plaćanje pouzećem. Pitanja? Pišite nam na Instagramu <a href="https://www.instagram.com/sanjalice__/" target="_blank" rel="noopener">@sanjalice__</a></p></div>
- </div>
- <div id="v-checkout" hidden style="flex:1;overflow:auto;padding:16px 20px">
-  <button class="back" id="backcart">&larr; Nazad u korpu</button>
-  <h3>Podaci za porudžbinu</h3>
+<aside class="drawer" id="drawer" aria-label="Zakazivanje termina">
+ <header><h3 id="dtitle">Zakazivanje termina</h3><button class="x" id="xbook" aria-label="Zatvori">&times;</button></header>
+ <div id="v-form" style="flex:1;overflow:auto;padding:16px 20px">
   <form class="form" id="form" novalidate>
+   <label for="f-sess">Fotografisanje</label><select id="f-sess" name="fotografisanje"></select>
+   <div class="line" id="pick"></div>
    <label for="f-name">Ime i prezime</label><input id="f-name" name="ime" type="text" autocomplete="name" required><div class="err">Upišite ime i prezime.</div>
-   <label for="f-addr">Adresa</label><input id="f-addr" name="adresa" type="text" autocomplete="street-address" required><div class="err">Upišite adresu.</div>
-   <div class="two"><div><label for="f-city">Grad</label><input id="f-city" name="grad" type="text" autocomplete="address-level2" required><div class="err">Upišite grad.</div></div>
-   <div><label for="f-zip">Poštanski broj</label><input id="f-zip" name="posta" type="text" inputmode="numeric" autocomplete="postal-code" required><div class="err">Upišite poštanski broj.</div></div></div>
    <label for="f-phone">Telefon</label><input id="f-phone" name="telefon" type="tel" autocomplete="tel" required><div class="err">Upišite telefon.</div>
    <label for="f-mail">E-mail</label><input id="f-mail" name="email" type="email" autocomplete="email" required><div class="err">Upišite ispravan e-mail.</div>
-   <label for="f-date">Željeni datum ili nedelja termina (nije obavezno)</label><input id="f-date" name="termin" type="text" placeholder="npr. druga polovina oktobra, vikend">
-   <label for="f-note">Napomena / personalizacija (nije obavezno)</label><textarea id="f-note" name="napomena" placeholder="Želje za scenografiju, imena, poruka za vaučer…"></textarea>
-   <div class="pay"><b>Plaćanje pouzećem</b> – gotovinom pri preuzimanju vaučera ili na dan termina u studiju. Ništa se ne plaća unapred. Javićemo vam se radi potvrde termina.</div>
-   <div class="tot"><span>Ukupno</span><span id="sum"></span></div>
-   <button class="btn" style="width:100%" type="submit">Pošalji porudžbinu</button>
-   <p class="help">Pitanja? Pišite nam na Instagramu <a href="https://www.instagram.com/sanjalice__/" target="_blank" rel="noopener">@sanjalice__</a></p>
+   <label for="f-date" id="f-datel">Željeni datum ili period</label><input id="f-date" name="termin" type="text">
+   <div id="when"><label>Kada vam najviše odgovara?</label><div class="pills">
+    <input type="radio" name="vreme" id="w1" value="Radnim danom prepodne"><label for="w1">Radnim danom prepodne</label>
+    <input type="radio" name="vreme" id="w2" value="Radnim danom popodne"><label for="w2">Radnim danom popodne</label>
+    <input type="radio" name="vreme" id="w3" value="Vikendom"><label for="w3">Vikendom</label>
+    <input type="radio" name="vreme" id="w4" value="Svejedno" checked><label for="w4">Svejedno</label></div></div>
+   <label for="f-note">Napomena (nije obavezno)</label><textarea id="f-note" name="napomena" placeholder="Želje za scenografiju, pitanja, bilo šta što treba da znamo…"></textarea>
+   <div class="pay" id="paynote"></div>
+   <button class="btn" style="width:100%" type="submit" id="sendbtn">Pošalji zahtev za termin</button>
+   <p class="help">Pitanja? Pišite nam na Instagramu <a href="https://www.instagram.com/sanjalice__/" target="_blank" rel="noopener">@sanjalice__</a> ili pozovite <a href="tel:+381644843566">064 484 3566</a></p>
   </form>
  </div>
  <div id="v-done" hidden style="flex:1;overflow:auto;padding:16px 20px">
-  <div class="thanks"><div class="script" style="font-size:2.4rem">Hvala!</div><h3>Hvala, porudžbina je primljena</h3>
+  <div class="thanks"><div class="script" style="font-size:2.4rem">Hvala!</div><h3 id="donetitle">Zahtev za termin je poslat</h3>
    <div class="no" id="orderno"></div>
-   <p>Potvrdu šaljemo na <b id="donemail"></b>, a javićemo vam se i radi dogovora termina. Plaćanje je pouzećem.</p>
+   <p id="donetext"></p>
    <button class="btn" id="closedone">Nastavi razgledanje</button>
    <p class="help" style="margin-top:16px">Pitanja? Pišite nam na Instagramu <a href="https://www.instagram.com/sanjalice__/" target="_blank" rel="noopener">@sanjalice__</a></p></div>
  </div>
 </aside>
-<div class="toast" id="toast" role="status"></div>
 <script>
 const PRODUCTS=[
 {id:'newborn',name:'Newborn fotografisanje',short:'Prve nedelje života, nežno uvijene u tkanine koje biramo zajedno.',price:12900,img:'img/newborn.jpg',imgs:['img/newborn.jpg','img/newborn3.jpg','img/newborn2.jpg'],
@@ -234,63 +226,50 @@ const PRODUCTS=[
 
 const fmt=n=>n.toLocaleString('de-DE')+' RSD';
 const $=s=>document.querySelector(s);
-const KEY='sanjalice_cart_v1';
-let cart=[];
-try{cart=JSON.parse(localStorage.getItem(KEY)||'[]')||[]}catch(e){cart=[]}
-function save(){try{localStorage.setItem(KEY,JSON.stringify(cart))}catch(e){}}
 const byId=id=>PRODUCTS.find(p=>p.id===id);
 function unit(p,sel){let pr=p.price;(p.options||[]).forEach(o=>{if(o.prices){const i=o.v.indexOf(sel[o.k]);if(i>=0)pr=o.prices[i]}});return pr}
 function defaults(p){const s={};(p.options||[]).forEach(o=>s[o.k]=o.v[0]);return s}
-cart=cart.filter(l=>byId(l.id));
-function addToCart(id,sel,text,qty){
- const p=byId(id);sel=sel||defaults(p);text=(text||'').trim();qty=qty||1;
- const key=id+'|'+JSON.stringify(sel)+'|'+text;
- const ex=cart.find(l=>l.key===key);
- if(ex)ex.qty+=qty;else cart.push({key,id,sel,text,qty});
- save();render();openCart();toast(p.name+' je u korpi');
-}
-function total(){return cart.reduce((s,l)=>s+unit(byId(l.id),l.sel)*l.qty,0)}
-function toast(m){const t=$('#toast');t.textContent=m;t.classList.add('on');setTimeout(()=>t.classList.remove('on'),1800)}
-function openCart(){$('#ov').classList.add('on');$('#drawer').classList.add('on');showView('cart')}
-function closeCart(){$('#ov').classList.remove('on');$('#drawer').classList.remove('on')}
-function showView(v){['cart','checkout','done'].forEach(x=>{$('#v-'+x).hidden=x!==v})}
 function esc(s){return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
-function render(){
- const n=cart.reduce((s,l)=>s+l.qty,0);
- document.querySelectorAll('.cnt').forEach(e=>e.textContent=n);
- const box=$('#lines');
- if(!cart.length){box.innerHTML='<div class="empty">Korpa je prazna.<br>Izaberite fotografisanje koje vam se sviđa.</div>';$('#cartfoot').hidden=true;return}
- $('#cartfoot').hidden=false;
- box.innerHTML=cart.map((l,i)=>{const p=byId(l.id);const det=Object.entries(l.sel).map(([k,v])=>k+': '+v).join(' · ');
-  return '<div class="line"><img src="'+p.img+'" alt=""><div><b>'+esc(p.name)+'</b><small>'+esc(det)+'</small>'+(l.text?'<small>'+esc(p.text)+': '+esc(l.text)+'</small>':'')+
-  '<div style="margin-top:6px;display:flex;align-items:center;gap:6px"><div class="qty"><button aria-label="Manje" data-q="-1" data-i="'+i+'">−</button><span>'+l.qty+'</span><button aria-label="Više" data-q="1" data-i="'+i+'">+</button></div><button class="rm" data-rm="'+i+'">Ukloni</button></div></div>'+
-  '<div style="font-weight:800;white-space:nowrap">'+fmt(unit(p,l.sel)*l.qty)+'</div></div>'}).join('');
- $('#total').textContent=fmt(total());
+const isV=p=>p.id==='voucer';
+let cur={id:PRODUCTS[0].id,sel:defaults(PRODUCTS[0]),text:''};
+$('#f-sess').innerHTML=PRODUCTS.map(p=>'<option value="'+p.id+'">'+esc(p.name)+'</option>').join('');
+function paint(){
+ const p=byId(cur.id),v=isV(p);
+ const det=Object.entries(cur.sel).map(([k,x])=>k+': '+x).join(' · ');
+ $('#pick').innerHTML='<img src="'+p.img+'" alt=""><div><b>'+esc(p.name)+'</b><small>'+esc(det)+'</small>'+(cur.text?'<small>'+esc(p.text)+': '+esc(cur.text)+'</small>':'')+'</div><div style="font-weight:800;white-space:nowrap">'+fmt(unit(p,cur.sel))+'</div>';
+ $('#dtitle').textContent=v?'Poručivanje vaučera':'Zakazivanje termina';
+ $('#f-datel').textContent=v?'Do kada vam treba vaučer? (nije obavezno)':'Željeni datum ili period (nije obavezno)';
+ $('#f-date').placeholder=v?'npr. za rođendan 20. novembra':(p.id==='newborn'?'npr. termin porođaja 25. novembar':'npr. druga polovina oktobra');
+ $('#when').hidden=v;
+ $('#paynote').innerHTML=v?'<b>Plaćanje pri preuzimanju vaučera.</b> Javićemo vam se da dogovorimo kako da ga preuzmete.':'<b>Ništa se ne plaća unapred.</b> Plaćanje je u studiju, na dan fotografisanja. Ovo je zahtev, a tačan dan i sat potvrđujemo telefonom.';
+ $('#sendbtn').textContent=v?'Poruči vaučer':'Pošalji zahtev za termin';
 }
-document.addEventListener('click',e=>{
- const t=e.target.closest('button');if(!t)return;
- if(t.dataset.q){const l=cart[+t.dataset.i];l.qty+=+t.dataset.q;if(l.qty<1)cart.splice(+t.dataset.i,1);save();render()}
- else if(t.dataset.rm){cart.splice(+t.dataset.rm,1);save();render()}
- else if(t.dataset.add){addToCart(t.dataset.add)}
-});
-$('#ov').onclick=closeCart;$('#xcart').onclick=closeCart;
-document.querySelectorAll('.cartbtn').forEach(b=>b.onclick=openCart);
-document.addEventListener('keydown',e=>{if(e.key==='Escape')closeCart()});
-$('#tocheckout').onclick=()=>{showView('checkout');$('#sum').textContent=fmt(total())};
-$('#backcart').onclick=()=>showView('cart');
+function openBook(id,sel,text){
+ if(id)cur={id,sel:sel||defaults(byId(id)),text:(text||'').trim()};
+ $('#f-sess').value=cur.id;paint();showView('form');
+ $('#ov').classList.add('on');$('#drawer').classList.add('on');
+}
+function closeBook(){$('#ov').classList.remove('on');$('#drawer').classList.remove('on')}
+function showView(v){['form','done'].forEach(x=>{$('#v-'+x).hidden=x!==v})}
+$('#f-sess').onchange=e=>{cur={id:e.target.value,sel:defaults(byId(e.target.value)),text:''};paint()};
+document.addEventListener('click',e=>{const t=e.target.closest('[data-book]');if(t){e.preventDefault();openBook(t.dataset.book)}});
+$('#ov').onclick=closeBook;$('#xbook').onclick=closeBook;
+document.querySelectorAll('.bookbtn').forEach(b=>b.onclick=()=>openBook());
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeBook()});
 $('#form').addEventListener('submit',e=>{
  e.preventDefault();const f=e.target;let ok=true;
  f.querySelectorAll('[required]').forEach(i=>{const bad=!i.value.trim()||(i.type==='email'&&!/^\S+@\S+\.\S+$/.test(i.value));i.classList.toggle('bad',bad);if(bad)ok=false});
- if(!ok||!cart.length){const b=f.querySelector('.bad');if(b)b.focus();return}
+ if(!ok){const b=f.querySelector('.bad');if(b)b.focus();return}
+ const p=byId(cur.id),v=isV(p);
  const no='SNJ-'+new Date().toISOString().slice(2,10).replace(/-/g,'')+'-'+Math.floor(1000+Math.random()*9000);
- const order={no,at:new Date().toISOString(),total:total(),lines:cart,customer:Object.fromEntries(new FormData(f))};
- try{const all=JSON.parse(localStorage.getItem('sanjalice_orders')||'[]');all.push(order);localStorage.setItem('sanjalice_orders',JSON.stringify(all))}catch(x){}
- $('#orderno').textContent=no;$('#donemail').textContent=f.email.value;
- cart=[];save();render();f.reset();showView('done');
+ const req={no,at:new Date().toISOString(),session:cur,price:unit(p,cur.sel),customer:Object.fromEntries(new FormData(f))};
+ try{const all=JSON.parse(localStorage.getItem('sanjalice_requests')||'[]');all.push(req);localStorage.setItem('sanjalice_requests',JSON.stringify(all))}catch(x){}
+ $('#orderno').textContent=no;
+ $('#donetitle').textContent=v?'Vaučer je poručen':'Zahtev za termin je poslat';
+ $('#donetext').innerHTML=v?'Javićemo vam se na <b>'+esc(f.telefon.value)+'</b> da dogovorimo preuzimanje vaučera. Potvrdu šaljemo i na <b>'+esc(f.email.value)+'</b>.':'Javićemo vam se na <b>'+esc(f.telefon.value)+'</b> da potvrdimo tačan dan i sat za <b>'+esc(p.name)+'</b>. Potvrdu šaljemo i na <b>'+esc(f.email.value)+'</b>.';
+ f.reset();showView('done');
 });
-$('#closedone').onclick=closeCart;
-window.addEventListener('storage',e=>{if(e.key===KEY){try{cart=JSON.parse(e.newValue||'[]')||[]}catch(x){cart=[]}render()}});
-render();
+$('#closedone').onclick=closeBook;
 
-document.getElementById('cards').innerHTML=PRODUCTS.map(p=>'<article class="card"><a class="ph" href="fotografisanje.html?p='+p.id+'"><img src="'+p.img+'" alt="'+p.name+'" loading="lazy"></a><div class="body"><h3>'+p.name+'</h3><p>'+p.short+'</p><div class="price">'+(p.options.some(o=>o.prices)?'od ':'')+fmt(p.price)+'</div><div class="row"><button class="btn sm" data-add="'+p.id+'">Dodaj u korpu</button><a class="btn sm ghost" href="fotografisanje.html?p='+p.id+'">Izaberi detalje</a></div></div></article>').join('');
+document.getElementById('cards').innerHTML=PRODUCTS.map(p=>'<article class="card"><a class="ph" href="fotografisanje.html?p='+p.id+'"><img src="'+p.img+'" alt="'+p.name+'" loading="lazy"></a><div class="body"><h3>'+p.name+'</h3><p>'+p.short+'</p><div class="price">'+(p.options.some(o=>o.prices)?'od ':'')+fmt(p.price)+'</div><div class="row"><button class="btn sm" data-book="'+p.id+'">'+(p.id==='voucer'?'Poruči vaučer':'Zakaži termin')+'</button><a class="btn sm ghost" href="fotografisanje.html?p='+p.id+'">Detalji</a></div></div></article>').join('');
 </script></body></html>
